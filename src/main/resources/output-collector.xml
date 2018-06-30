@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<configuration>
+	<property>
+		<name>collector_new_install_user</name>
+		<value>com.ibeifeng.transformer.mr.stats.nu.StatsUserNewInstallUserCollector</value>
+	</property>
+
+	<property>
+		<name>collector_browser_new_install_user</name>
+		<value>com.ibeifeng.transformer.mr.stats.nu.StatsDeviceBrowserNewInstallUserCollector</value>
+	</property>
+</configuration>
