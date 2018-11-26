@@ -77,7 +77,7 @@ public class NewsKafkaParse {
 			        		"\",\"time\":\""+split[7]+"\"}";
 					String jsonParse = JavaUtil.getJsonParse(dataJson);
 					String splitWords = JavaUtil.getSplitWords(jsonParse);
-					
+					//存储模型的时候，最好把tf-idf的结果也存下来，这样，结果才更真确，这里，存在偏差
 					HashingTF hashingTF = new HashingTF();  
 					
 					Vector transform = hashingTF.transform(Arrays.asList(splitWords.split(" ")));
